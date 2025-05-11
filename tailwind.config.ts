@@ -72,9 +72,6 @@ export default {
 					primary: '#9b87f5',
 					secondary: '#7E69AB',
 					accent: '#0FA0CE',
-					green: '#4ADE80',
-					'light-green': '#A7F3D0',
-					'dark-green': '#059669'
 				}
 			},
 			borderRadius: {
@@ -117,8 +114,8 @@ export default {
 					'50%': { transform: 'translateY(-10px)' },
 				},
 				glow: {
-					'0%, 100%': { boxShadow: '0 0 5px 2px rgba(74, 222, 128, 0.2)' },
-					'50%': { boxShadow: '0 0 20px 5px rgba(74, 222, 128, 0.4)' }
+					'0%, 100%': { boxShadow: '0 0 5px 2px rgba(15, 160, 206, 0.2)' },
+					'50%': { boxShadow: '0 0 20px 5px rgba(15, 160, 206, 0.4)' }
 				}
 			},
 			animation: {
