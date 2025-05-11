@@ -1,51 +1,60 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check, Calendar } from "lucide-react";
 
 const PricingSection = () => {
   const pricingPlans = [
     {
-      name: "Basic",
+      name: "Launch Plan",
+      subtitle: "For early-stage founders",
       price: "$499",
-      description: "For small teams and prototyping",
+      period: "/month",
+      description: "Everything you need to validate your idea and build an MVP.",
       features: [
-        "3 sensor types included",
-        "Basic API access",
-        "Documentation & samples",
-        "Email support",
-        "1 project consultation"
+        "Access to core tech stack",
+        "1 growth session/month",
+        "On-demand concierge support",
+        "Basic documentation & templates",
+        "Community access"
       ],
       isPopular: false,
-      buttonVariant: "outline" as const
+      buttonVariant: "outline" as const,
+      buttonText: "Start Free Trial"
     },
     {
-      name: "Professional",
-      price: "$1,299",
-      description: "For growing businesses with specific needs",
+      name: "Scale Plan",
+      subtitle: "For growing teams",
+      price: "$1,499",
+      period: "/month",
+      description: "Advanced tools and support for teams ready to grow.",
       features: [
-        "All sensor types included",
-        "Full API access",
-        "Custom integration support",
-        "Priority email & phone support",
-        "3 project consultations"
+        "Everything in Launch +",
+        "Dedicated growth strategist",
+        "Monthly talent sourcing",
+        "Custom AI tools",
+        "Priority support"
       ],
       isPopular: true,
-      buttonVariant: "default" as const
+      buttonVariant: "default" as const,
+      buttonText: "Start Free Trial"
     },
     {
-      name: "Enterprise",
+      name: "Partner Plan",
+      subtitle: "Custom for funded startups",
       price: "Custom",
-      description: "For large-scale implementations",
+      period: "",
+      description: "Full-service partnership for funded startups.",
       features: [
-        "Custom sensor development",
-        "Dedicated API environment",
-        "On-site integration & training",
-        "24/7 premium support",
-        "Unlimited project consultations"
+        "End-to-end tech & growth support",
+        "Strategic co-building",
+        "Priority talent placement",
+        "White-glove concierge",
+        "Custom integration & training"
       ],
       isPopular: false,
-      buttonVariant: "outline" as const
+      buttonVariant: "outline" as const,
+      buttonText: "Book a Pricing Call"
     }
   ];
 
@@ -53,9 +62,9 @@ const PricingSection = () => {
     <section id="pricing" className="py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Pricing Plans</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Flexible Pricing That Scales With You</h2>
           <p className="max-w-2xl mx-auto text-gray-600">
-            Flexible options for businesses of all sizes. All plans include access to our core technology.
+            From bootstrapped MVPs to post-raise startups, our pricing adapts to your needs and stage.
           </p>
         </div>
         
@@ -75,10 +84,12 @@ const PricingSection = () => {
                 </div>
               )}
               
+              <div className="mb-2 text-gray-500 font-medium">{plan.subtitle}</div>
               <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
+              
               <div className="mb-4">
                 <span className="text-4xl font-bold">{plan.price}</span>
-                {plan.price !== "Custom" && <span className="text-gray-500">/starter kit</span>}
+                {plan.period && <span className="text-gray-500">{plan.period}</span>}
               </div>
               <p className="text-gray-600 mb-6">{plan.description}</p>
               
@@ -96,8 +107,9 @@ const PricingSection = () => {
                 className={`w-full py-6 ${
                   plan.isPopular ? 'bg-blue-600 hover:bg-blue-700' : ''
                 }`}
+                startIcon={plan.buttonText.includes("Call") ? <Calendar className="mr-2 h-5 w-5" /> : undefined}
               >
-                {plan.price === "Custom" ? "Contact Sales" : "Get Started"}
+                {plan.buttonText}
               </Button>
             </div>
           ))}
