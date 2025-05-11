@@ -1,9 +1,5 @@
 # Welcome to Godspeed Landing Page
 
-## Project info
-
-**URL**: https://lovable.dev/projects/c682b84f-458d-442c-992d-99142ca46ea0
-
 ## 📌 What’s Inside
 
 This project is a sleek and interactive landing page created using a combination of **Lovable** (an AI-powered website builder) and **ChatGPT** for structural planning and feature brainstorming.
@@ -16,6 +12,10 @@ I took an unconventional yet resourceful route to build this project. Rather tha
 - Carefully iterating the design and resolving visual issues—all within the **strict limit of just 5 prompts** available in Lovable’s free version.
 
 Every step was carefully considered, and each prompt was crafted to extract the maximum value. Despite this constraint, the final result is cohesive, functional, and visually engaging.
+
+## 🚀 How to Run It
+
+The site is deployed and can be accessed directly via the URL: https://lovable.dev/projects/c682b84f-458d-442c-992d-99142ca46ea0 no local installation needed.
 
 ## What technologies are used for this project?
 
