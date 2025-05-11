@@ -12,6 +12,8 @@ const HeroSection = () => {
         <div className="absolute top-[15%] left-[15%] w-0.5 h-48 bg-[#0FA0CE] rotate-45 blur-sm"></div>
         <div className="absolute top-[30%] right-[20%] w-0.5 h-72 bg-[#0FA0CE] -rotate-12 blur-sm"></div>
         <div className="absolute bottom-[20%] left-[30%] w-0.5 h-64 bg-[#0FA0CE] rotate-[30deg] blur-sm"></div>
+        <div className="absolute top-[25%] left-[25%] w-0.5 h-56 bg-godspeed-green rotate-[20deg] blur-sm"></div>
+        <div className="absolute bottom-[30%] right-[15%] w-0.5 h-60 bg-godspeed-green -rotate-[15deg] blur-sm"></div>
       </div>
       
       <div className="absolute inset-0 overflow-hidden">
@@ -32,7 +34,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto animate-fade-in drop-shadow-lg">
-            Leverage Godspeed's AI-powered tech stack, resourceful network, and concierge-level support to build faster, 
+            Leverage <span className="text-godspeed-green font-semibold">Godspeed's</span> AI-powered tech stack, resourceful network, and concierge-level support to build faster, 
             de-risk smarter, and scale with confidence—without the chaos.
           </p>
           
@@ -42,9 +44,10 @@ const HeroSection = () => {
             </Button>
             <Button 
               variant="outline" 
-              className="border-[#0FA0CE] border-2 bg-[#0FA0CE]/10 text-white hover:bg-[#0FA0CE]/20 px-8 py-7 text-lg shadow-[0_0_15px_rgba(15,160,206,0.3)] animate-pulse hover:animate-none transform transition-all duration-300 hover:scale-105"
+              className="border-godspeed-green border-2 bg-godspeed-green/10 text-white hover:bg-godspeed-green/20 px-8 py-7 text-lg shadow-[0_0_15px_rgba(74,222,128,0.3)] animate-glow hover:animate-none transform transition-all duration-300 hover:scale-105 group"
             >
-              <Calendar className="mr-2 h-6 w-6" /> Book a Free Strategy Call
+              <Calendar className="mr-2 h-6 w-6 group-hover:text-godspeed-green transition-colors" /> 
+              <span className="font-semibold">Book a Free Strategy Call</span>
             </Button>
           </div>
         </div>
