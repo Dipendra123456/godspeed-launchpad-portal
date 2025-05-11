@@ -1,54 +1,21 @@
-# Welcome to your Lovable project
+# Welcome to Godspeed Landing Page
 
 ## Project info
 
 **URL**: https://lovable.dev/projects/c682b84f-458d-442c-992d-99142ca46ea0
 
-## How can I edit this code?
+## 📌 What’s Inside
 
-There are several ways of editing your application.
+This project is a sleek and interactive landing page created using a combination of **Lovable** (an AI-powered website builder) and **ChatGPT** for structural planning and feature brainstorming.
 
-**Use Lovable**
+I took an unconventional yet resourceful route to build this project. Rather than directly coding the website, I explored the capabilities of different AI tools to design and structure the landing page effectively. Here’s a summary of my process:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c682b84f-458d-442c-992d-99142ca46ea0) and start prompting.
+- Researching landing page trends and collecting inspiration from various design platforms.
+- Using ChatGPT to outline the page structure, layout components, and interactive features.
+- Translating those ideas into tailored prompts for Lovable to generate and refine the site.
+- Carefully iterating the design and resolving visual issues—all within the **strict limit of just 5 prompts** available in Lovable’s free version.
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Every step was carefully considered, and each prompt was crafted to extract the maximum value. Despite this constraint, the final result is cohesive, functional, and visually engaging.
 
 ## What technologies are used for this project?
 
@@ -60,14 +27,17 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## ⚠️ Notes & Limitations
 
-Simply open [Lovable](https://lovable.dev/projects/c682b84f-458d-442c-992d-99142ca46ea0) and click on Share -> Publish.
+- Created entirely through AI tools without direct code intervention.
+- Built within **just 5 prompts**—highlighting both the efficiency of the process and the thoughtful planning behind each step.
+- Certain customisations (e.g., animations, fine-tuned responsiveness) were limited by the free version of Lovable.
+- With access to **more resources or premium tools**, the design could be extended significantly, adding advanced interactions, transitions, and enhanced responsiveness.
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+This project demonstrates how much can be achieved with limited tools when guided by a clear vision, creative problem-solving, and efficient use of AI. With more flexibility, the possibilities only grow stronger.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+
