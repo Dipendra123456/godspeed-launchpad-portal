@@ -65,6 +65,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				godspeed: {
+					dark: '#1A1F2C',
+					darker: '#151920',
+					primary: '#9b87f5',
+					secondary: '#7E69AB',
+					accent: '#0FA0CE',
 				}
 			},
 			borderRadius: {
@@ -92,12 +99,22 @@ export default {
 				fadeIn: {
 					'0%': { opacity: '0', transform: 'translateY(20px)' },
 					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				pulse: {
+					'0%, 100%': { opacity: 1 },
+					'50%': { opacity: 0.5 },
+				},
+				thunderFlash: {
+					'0%, 100%': { opacity: 0 },
+					'10%, 90%': { opacity: 0 },
+					'50%': { opacity: 1 },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fadeIn 1s ease-in forwards'
+				'fade-in': 'fadeIn 1s ease-in forwards',
+				'thunder-flash': 'thunderFlash 3s ease-in-out infinite',
 			}
 		}
 	},

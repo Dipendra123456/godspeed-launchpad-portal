@@ -92,12 +92,12 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[#1A1F2C] text-foreground;
     font-family: 'Inter', sans-serif;
   }
 
   .gradient-bg {
-    background: linear-gradient(135deg, #1a202c 0%, #2a4365 100%);
+    background: linear-gradient(135deg, #1A1F2C 0%, #242a38 100%);
   }
   
   .section-padding {
@@ -118,4 +118,59 @@
       transform: translateY(0);
     }
   }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-[#9b87f5] via-[#7E69AB] to-[#0FA0CE] bg-clip-text text-transparent;
+  }
+  
+  .lightning-glow {
+    filter: drop-shadow(0 0 10px #0FA0CE);
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
+  }
+  
+  .neo-morphism {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 
+                -10px -10px 20px rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* Thunderbolt animation */
+@keyframes thunderEffect {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.thunder-animate {
+  animation: thunderEffect 4s infinite;
+}
+
+/* Enhanced depth effects */
+.depth-card {
+  @apply bg-[#242a38] rounded-lg shadow-lg;
+  box-shadow: 
+    0 10px 15px -3px rgba(0, 0, 0, 0.3), 
+    0 4px 6px -4px rgba(0, 0, 0, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
