@@ -15,7 +15,7 @@ Every step was carefully considered, and each prompt was crafted to extract the 
 
 ## 🚀 How to Run It
 
-The site is deployed and can be accessed directly via the URL: https://lovable.dev/projects/c682b84f-458d-442c-992d-99142ca46ea0 no local installation needed.
+The site is deployed and can be accessed directly via the URL: https://preview--godspeed-launchpad-portal.lovable.app/ no local installation needed.
 
 ## What technologies are used for this project?
 
